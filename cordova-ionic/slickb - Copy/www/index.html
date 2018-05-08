@@ -1,0 +1,100 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+
+    <!-- define angular app -->
+    <!-- removed ng-app= tag and replaced with id-->
+ <html id="cordovaApp">
+    <head>
+	    <!-- For proper rendering of this page in mobile screen-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+      <!--- include MQTT library -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+      <!-- SPELLS -->
+      <!-- load angular via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+      <!-- load cordova.js -->
+      <script type ="text/javascript" src="cordova.js"></script>
+       <!-- Imran - change app to js because app.js is in js directory now -->
+       <script type ="text/javascript" src="ng-cordova.min.js"></script>
+       <script src="js/app.js"></script>
+      <!-- Imran need this to initialize plugins  - must wait until device ready-->
+      
+      <script type="text/javascript" charset="utf-8">
+        //manually start angular after deviceready event shows that
+        //all the plugins have been loaded
+        document.addEventListener("deviceready", function() {
+        
+        // see what plugins have been installed
+        var md = cordova.require("cordova/plugin_list").metadata;
+        alert(JSON.stringify(md));
+        
+        // retrieve the DOM element that had the ng-app attribute
+        var domElement = document.getElementById('cordovaApp');
+        angular.bootstrap(domElement, ["cordovaApp"]);
+         }, false);
+      </script>
+      
+      <!-- Imran - change app to css because app.css is in css directory now -->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	    <link rel="stylesheet" href="css/app.css" />
+    </head>
+
+    <!-- define a single angular controller -->
+  <body ng-controller="mainController">
+    <!-- to show any errors -->
+    <p id="error"></p>
+
+    </div id = "main"  >
+      <div id='camera' class ='border-button'>
+        <!-- camera plugin example -->
+        <div class="btn-group">
+          <button class = 'btn' ng-show="showImage" ng-click="newImage()">New Image</button>
+          <button class = 'btn' ng-click="captureImage()">Capture Image</button>
+        </div>                  
+		    <img  id="capturedImage" width="300" height="300" ng-show="showImage"></img>
+      </div>
+      
+      <div id='iBeacon' class ='border-button'>
+          <!-- iBeacon example -->
+          <button class='btn' ng-click="logToDom(uuid)">Print UUID for {{identifier}}</button>
+          <p>uuid:  {{uuid}}</p>
+          <p>minor: {{minor}}</p>
+          <p>major: {{major}}</p>
+      </div>
+
+      <div id='geolocation' class ='border-button'>
+          <!-- location example -->
+          <button class = 'btn' ng-click="getCurrentPosition()">Get Current Position</button>
+          <p>latitude:  {{latitude}}</p>
+          <p>longitude: {{longitude}}</p>
+      </div>
+
+      <div id='mqtt' class ='border-button'>
+        <!-- mqtt  example -->
+        <div class="btn-group">
+          <button class = 'btn' ng-click="initMQTT()">Connect MQTT</button>
+          <button class = 'btn' ng-click="publishMQTT('Hello from Sharjah','/World')">Publish</button>
+        </div>  
+            <p>MQTT Connected: {{MQTTConnected}}</p>
+            <p>Message from: {{messageDestinationName}}</p>
+            <p>Message payload: {{messagePayloadString}}</p>
+      </div>
+
+      <div id='battery' class ='border-button'>
+        <!-- battery example -->
+        <p>battery level: {{batteryLevel}}</p>
+        <p>battery plugged in: {{batteryIsPlugged}}</p>
+      </div>
+
+    </div>
+
+  </body>
+ 
+ </html>

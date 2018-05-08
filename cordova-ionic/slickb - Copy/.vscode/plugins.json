@@ -1,0 +1,1 @@
+{"plugins":["cordova-plugin-whitelist","cordova-plugin-camera","cordova-plugin-compat","com.unarin.cordova.beacon","cordova-plugin-battery-status","cordova-plugin-geolocation"]}

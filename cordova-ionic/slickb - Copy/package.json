@@ -1,0 +1,29 @@
+{
+  "name": "io.cordova.hellocordova",
+  "version": "0.0.1",
+  "displayName": "HelloCordova",
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-geolocation": {},
+      "com.unarin.cordova.beacon": {}
+    }
+  },
+  "dependencies": {
+    "com.unarin.cordova.beacon": "git+https://github.com/petermetz/cordova-plugin-ibeacon.git",
+    "cordova-android": "^6.3.0",
+    "cordova-browser": "^5.0.3",
+    "cordova-eventemitter-public": "git+https://github.com/johnbx/cordova-eventemitter-public.git",
+    "cordova-plugin-battery-status": "^2.0.2",
+    "cordova-plugin-camera": "^2.3.1",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-whitelist": "1"
+  }
+}
