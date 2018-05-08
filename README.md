@@ -1,4 +1,4 @@
-This is a brief explanation of the project and the way to install the Comfort Machine project.  The goal of this project is to provide users the ability to monitor a room or a building for measuring comfort in any given space.
+#This is a brief explanation of the project and the way to install the Comfort Machine project.  The goal of this project is to provide #users the ability to monitor a room or a building for measuring comfort in any given space.
 
 Things you need to install the software and how to install them (FOR THE BACKEND):
 
