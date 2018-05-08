@@ -2,13 +2,13 @@
 
 **Things you need to install the software and how to install them (FOR THE BACKEND):**
 
-•	Node.js from : https://nodejs.org/en/download/ 
+•	Node.js from : 'https://nodejs.org/en/download/'
 
 
 **After adding the node.js to the system please install :** 
 
 
-•	Express by : npm –save install express
+•	Express by : 'npm –save install express'
 
 •	Cookies and sessions: npm –save install cookie-parser
 
