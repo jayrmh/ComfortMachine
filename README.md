@@ -4,7 +4,9 @@ Things you need to install the software and how to install them (FOR THE BACKEND
 
 •	Node.js from : https://nodejs.org/en/download/ 
 
+
 After adding the node.js to the system please install : 
+
 
 •	Express by : npm –save install express
 
@@ -18,6 +20,7 @@ After adding the node.js to the system please install :
 
 
 Things you need to install the software and how to install them (FOR THE FRONTEND):
+
 •	Install Cordova by: npm install cordova
 
 •	Install Ionic by: npm install –g ionic ( NOTE: make sure you are using ionic version 1 by saying ionic start *filename *template --type ionic1)
