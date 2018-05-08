@@ -23,7 +23,7 @@
 
 •	Install Cordova by: `npm install cordova`
 
-•	Install Ionic by: `npm install –g ionic` ( *NOTE: make sure you are using ionic version 1 by saying ionic start *filename *template --type ionic1*)
+•	Install Ionic by: `npm install –g ionic` *(NOTE: make sure you are using ionic version 1 by saying ionic start *filename *template --type ionic1)*
 
 **Installation of Android:** 
 
