@@ -2,7 +2,7 @@
 
 **Things you need to install the software and how to install them (FOR THE BACKEND):**
 
-•	Node.js from : `[https://nodejs.org/en/download/]`
+•	Node.js from : [`https://nodejs.org/en/download/`]
 
 
 **After adding the node.js to the system please install :** 
