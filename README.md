@@ -2,7 +2,7 @@
 
 **Things you need to install the software and how to install them (FOR THE BACKEND):**
 
-•	Node.js from : (`https://nodejs.org/en/download/`)
+•	Node.js from : `https://nodejs.org/en/download/`
 
 
 **After adding the node.js to the system please install :** 
@@ -16,7 +16,7 @@
 
 •	Express session: `npm –save install express-session` 
 
-•	The database CouchDB  from : `[http://couchdb.apache.org/]`
+•	The database CouchDB  from : `http://couchdb.apache.org/`
 
 
 **Things you need to install the software and how to install them (FOR THE FRONTEND):**
@@ -29,15 +29,15 @@
 
 •	Install java SDK and add the PATH of java SDK in your system environmental variables
 
-•	Install Android Tools manager from: `[https://developer.android.com/studio/] ` 
+•	Install Android Tools manager from: `https://developer.android.com/studio/ ` 
 
 •	Fixe the PATH of ANDROID_HOME in your system environmental variables that directs to the folder where Android SDK is installed.
 
-*After downloading the above programs download the Cordova-ionic folder from `[https://github.com/jayrmh/ComfortMachine]`. *
+*After downloading the above programs download the Cordova-ionic folder from `https://github.com/jayrmh/ComfortMachine`. *
 
 **The following plugins was downloaded with specific versions in the project to make sure its compatibility:** 
 
-•	iBeacon plugin: cordova plugin add `[https://github.com/petermetz/cordova-plugin-ibeacon.git]`
+•	iBeacon plugin: cordova plugin add `https://github.com/petermetz/cordova-plugin-ibeacon.git`
 
 •	Proximity Beacon Plugin: `com.unarin.cordova.beacon@3.4.1`
 
