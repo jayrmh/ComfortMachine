@@ -1,6 +1,6 @@
 **This is a brief explanation of the project and the way to install the IOT Comfort Machine Application. The goal of this project is to provide users the ability to monitor a room or a building for measuring comfort in any given space, using Estimote iBeacons.**
 
-**LazyPanda allows the users to set their desired levels of comfort on the applicaiton, in terms of temperature and luminosity, and accordingly view comfort maps of the ambience catered to their preferences, as well as find zones within the deployed indoor spaces that match their choices and finally be routed to such a location. **
+LazyPanda allows the users to set their desired levels of comfort on the applicaiton, in terms of temperature and luminosity, and accordingly view comfort maps of the ambience catered to their preferences, as well as find zones within the deployed indoor spaces that match their choices and finally be routed to such a location. 
 
 **The nodes in this system are the MQTT and Beacon initiator installed on the Raspberry PI, the NodeJS + Express Back-End Server that also launches a companion website for the users to set their preferences and view maps, and finally a Cordova android application to allow the users to find and route to their comfort zone**
 
