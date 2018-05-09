@@ -71,6 +71,17 @@
 •	`ionic serve` (*if you want to see the results on the browser however the some of the plugins might not work*)
   
 
+**For execution of Lazy Panda:**
+
+•	For running MQTT, and reading from Beacons - Please navigate to the estimote-specs directory from the root
+•	Run telemetry file: `node estimote-telemetry.js`
+
+•	For running Nodejs + Express back-end server, to populate database and launch front-end website - Please navigate to the expressheader1.js directory from the root, then to the directory /www 
+•	Run back-end server and website client: `node www`
+
+•	For running cordova application, to launch front-end android - Please navigate to the cordova-ionic directory from the root, then to the directory /slickb
+•	Run front-end client: `cordova run --device`
+
 
 
 
